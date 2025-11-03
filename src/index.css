@@ -1,0 +1,139 @@
+/* ---------------------------------------------------------------------
+ |  GOOGLE FONTS (weights 100‑900, italics included)
+ |-------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+.ralewayfont {
+  font-family: "Raleway", sans-serif;
+}
+.montsefont {
+  font-family: "Montserrat", sans-serif;
+}
+.scroll-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animate__animated {
+  animation: bounce 2s infinite !important;
+}
+
+.bounce-animation {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.btn-green-500 {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #4caf50;
+  color: #4caf50;
+}
+
+.text-brandGreen {
+  color: #43a047;
+}
+
+.text-brandGray {
+  color: #757575;
+}
+
+
+
+.goog-te-gadget-simple {
+  padding: 15px;
+    border-radius: 10px;
+}
+
+/* navbar design */
+
+.menu li {
+  position: relative;
+}
+
+.menu li a::before {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/shape-3.png);
+  width: 70px;
+  height: 5px;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu li a::before {
+    background-image: none;
+  }
+}
+
+.menu li a.active::before {
+  opacity: 1;
+  visibility: visible;
+}
+.menu li a {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* .active{
+    color: #309255 !important;
+    background-color: transparent !important;
+} */
+
+.peoplefromdiv {
+  margin-top: 50px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-shadow {
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1),
+    /* top shadow */ 0 -1px 3px rgba(0, 0, 0, 0.1),
+    /* subtle top inner depth */ 0 0 30px rgba(255, 255, 255, 0.6),
+    /* strong white glow */ 0 0 60px rgba(255, 255, 255, 0.4),
+    /* extended outer glow */ 0 4px 6px rgba(0, 0, 0, 0.2),
+    /* base shadow */ 0 1px 3px rgba(0, 0, 0, 0.1); /* inner depth */
+  transition: box-shadow 0.3s ease-in-out;
+}
