@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Info, MoreHorizontal, ArrowUp } from "lucide-react";
+import { Info, MoreHorizontal } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Table } from "antd";
@@ -20,7 +20,6 @@ const UsersTable = () => {
   const [selectedTime, setSelectedTime] = useState("");
   const [selectedCountry, setSelectedCountry] = useState("");
   const [searchTerms, setSearchTerms] = useState("");
-
   // Debounce search term with 500ms delay
   const debouncedSearchTerms = useDebounce(searchTerms, 500);
 

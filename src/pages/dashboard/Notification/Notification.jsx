@@ -73,10 +73,17 @@ const Notification = () => {
             
             {unreadCount > 0 && (
               <button
+<<<<<<< HEAD
                 onClick={() => markAllAsRead()}
                 className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-md transition-colors duration-200"
               >
                 <Check className="w-4 h-4" />
+=======
+                onClick={markAllAsRead}
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-md transition-colors duration-200"
+              >
+                <CheckCheck className="w-4 h-4" />
+>>>>>>> eaff26666b01768bf1e987c54c26bfeadb06e6c8
                 <span className="hidden sm:inline">Mark all as read</span>
                 <span className="sm:hidden">Mark all</span>
               </button>
