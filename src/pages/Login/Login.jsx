@@ -197,7 +197,7 @@ const Login = () => {
             />
           )}
 
-          <p className="text-md font-semibold text-[#A0AEC0] text-center mt-4 mb-3">
+          {/* <p className="text-md font-semibold text-[#A0AEC0] text-center mt-4 mb-3">
             Don’t have an account?{" "}
             <Link
               to="/register"
@@ -205,7 +205,7 @@ const Login = () => {
             >
               Sign up
             </Link>
-          </p>
+          </p> */}
 
           {/* OR Divider */}
           {/* <div className="flex items-center my-4">

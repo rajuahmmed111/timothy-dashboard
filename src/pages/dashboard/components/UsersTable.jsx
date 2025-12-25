@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Info, MoreHorizontal } from "lucide-react";
+import { ArrowUp, MoreHorizontal } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Table } from "antd";
