@@ -182,7 +182,7 @@ const FinancialDashboard = () => {
           />
           <MetricCard
             title="Users"
-            value={1009123}
+            value={0}
             trend="down"
             icon={TrendingDown}
             trendColor="red"
