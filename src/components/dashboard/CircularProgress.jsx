@@ -195,7 +195,7 @@ const ContractManagement = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <ContractCard
             title="Active Contracts"
-            percentage={100}
+            percentage={Math.round(confirmedRate)}
             value={totalContracts}
             growth={`${Number(totalContractsGrowth).toFixed(1)}%`}
             selectedTime={selectedTime}
